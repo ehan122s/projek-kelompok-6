@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata Diri</title>
+  <style>
+    /* Import font Poppins */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #a78bfa, #60a5fa, #34d399);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .card {
+      max-width: 700px;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(15px);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      text-align: center;
+      color: #fff;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      margin-bottom: 20px;
+      transition: transform 0.4s ease;
+    }
+
+    .card img:hover {
+      transform: rotate(5deg) scale(1.1);
+    }
+
+    h1 {
+      font-size: 28px;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    p {
+      margin: 5px 0;
+      font-size: 15px;
+      opacity: 0.9;
+    }
+
+    .section {
+      text-align: left;
+      margin-top: 25px;
+      background: rgba(255,255,255,0.1);
+      padding: 15px;
+      border-radius: 15px;
+    }
+
+    .section h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #facc15;
+    }
+
+    .section ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .section ul li {
+      margin: 6px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .section ul li::before {
+      content: "✨";
+      position: absolute;
+      left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <img src="url.jpeg" alt="Foto Diri">
+    <h1>Aurel Mustika Bunga Putri Rusmana</h1>
+    <div class="section">
+      <h2>🏡 Alamat</h2>
+      <ul>
+        <li>kp.cileungsing pasawahan</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🏫Kelas</h2>
+      <ul>
+        <li>XI-PPL2</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>📆 Tanggal Lahir</h2>
+      <ul>
+        <li>10-Desember-2008</li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
