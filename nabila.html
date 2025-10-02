@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biodata Diri</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #74ebd5, #9face6);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      background: #fff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 400px;
+    }
+    .card img {
+      width: 200px;   /* diperbesar dari 150px */
+      height: 200px;  /* diperbesar dari 150px */
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid #74ebd5;
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin: 10px 0;
+      color: #333;
+    }
+    p {
+      margin: 5px 0;
+      color: #555;
+    }
+    .info {
+      text-align: left;
+      margin-top: 15px;
+    }
+    .info p {
+      padding: 5px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <img src="foto.jpg" alt="Foto Profil">
+    <h2>Nama Lengkap</h2>
+    <p><em>Web Developer</em></p>
+
+    <div class="info">
+      <p><strong>Nama:</strong> Nabila Aisya</p>
+      <p><strong>Umur:</strong> 16 Tahun</p>
+      <p><strong>Kelas:</strong> XI PPL 2</p>
+      <p><strong>Alamat:</strong> Garut, Indonesia</p>
+      <p><strong>Email:</strong> nabila@example.com</p>
+      <p><strong>No HP:</strong> 0812-3456-7890</p>
+    </div>
+  </div>
+
+</body>
+</html>
