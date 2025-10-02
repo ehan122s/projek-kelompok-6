@@ -16,7 +16,27 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
+});
+
+Route::get('ehan', function () {
+    return view('ehan');
+});
+
+Route::get('nizar', function () {
+    return view('nizar');
+});
+
+Route::get('aurel', function () {
+    return view('aurel');
+});
+
+Route::get('tian', function () {
+    return view('tian');
+});
+
+Route::get('nabila', function () {
+    return view('nabila');
 });
 
 Route::get('/dashboard', function () {

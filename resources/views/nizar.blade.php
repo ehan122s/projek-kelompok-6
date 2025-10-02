@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata - M Nizar Rizqy Raihan </title>
+    
+    <!-- Menggunakan Font dari Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- Reset & Style Dasar --- */
+        :root {
+            --primary-color: #11998e; /* Warna hijau teal */
+            --secondary-color: #38ef7d; /* Warna hijau muda */
+            --text-color: #333;
+            --bg-color: #f4f7f6;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--text-color);
+        }
+
+        /* --- Container Kartu Utama --- */
+        .profile-card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 450px;
+            width: 90%;
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .profile-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4);
+        }
+
+        /* --- Header dengan Background Gradien --- */
+        .card-header {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            padding: 50px 30px 80px;
+            position: relative;
+        }
+
+        /* --- Foto Profil yang Estetik --- */
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid var(--card-bg);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+            position: absolute;
+            bottom: -75px;
+            left: 50%;
+            transform: translateX(-50%);
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: translateX(-50%) scale(1.1);
+        }
+        
+        /* --- Konten Utama --- */
+        .card-body {
+            padding: 80px 30px 30px;
+        }
+
+        .card-body h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin: 0;
+            color: var(--text-color);
+        }
+
+        .card-body p.tagline {
+            color: #777;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .card-body .info {
+            text-align: left;
+            margin-top: 30px;
+        }
+
+        .card-body .info-item {
+            margin-bottom: 25px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        /* --- Ikon SVG untuk estetika --- */
+        .card-body .info-item .icon {
+            min-width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 15px;
+        }
+
+        .card-body .info-item .icon svg {
+            width: 20px;
+            height: 20px;
+            fill: white;
+        }
+
+        .card-body .info-item .details h3 {
+            font-size: 16px;
+            font-weight: 600;
+            margin: 0 0 5px 0;
+            color: var(--text-color);
+        }
+
+        .card-body .info-item .details p, .card-body .info-item .details ul {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        
+        .card-body .info-item .details ul li {
+            padding: 2px 0;
+        }
+
+        .card-body .info-item .details a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .card-body .info-item .details a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="profile-card">
+        <div class="card-header">
+            <!-- GANTI LINK FOTO DI BAWAH INI -->
+            <img src="nizar.jpg" alt="Foto Profil" class="profile-img">
+        </div>
+        <div class="card-body">
+            <h1>M nizar Rizqy Raihan</h1>
+            <p class="tagline">Senior High School</p>
+
+            <div class="info">
+                <div class="info-item">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    </div>
+                    <div class="details">
+                        <h3>Tentang Saya</h3>
+                        <p>Siswa SMK yang teliti, rapi, dan memiliki passion di bidang Futsal.</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>
+                    </div>
+                    <div class="details">
+                        <h3>Keahlian</h3>
+                        <ul>
+                            <li></li>
+                            <li>Bermain BOLA (Dan Badminton)</li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                    </div>
+                    <div class="details">
+                        <h3>Kontak</h3>
+                        <p>📧 <a href="mailto:nizar.@gmail.com">nizarraihan.acc@gmail.com</a></p>
+                        <p>💬 089-536-108-5132</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
